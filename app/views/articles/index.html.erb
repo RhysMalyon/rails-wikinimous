@@ -1,0 +1,10 @@
+<ul>
+  <% @articles.each do |article| %>
+    <div class="card mt-3">
+      <li>
+        <h3 class="card-header"><%= link_to article.title, article_path(article) %></h3>
+        <p class="card-body"><%= article.content %></p>
+      </li>
+    </div>
+  <% end %>
+</ul>

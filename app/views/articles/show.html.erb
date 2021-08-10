@@ -1,0 +1,22 @@
+<div class="card mt-3">
+  <h2 class="card-header"><%= @article.title %></h2>
+  <div class="card-body">
+    <p><%= @article.content %></p>
+
+    <div class="article-bar">
+      <ul class="article-options p-0 m-0">
+        <%= link_to(edit_article_path) do %>
+          <i class="far fa-edit"></i>
+        <% end %>
+        <%= link_to (article_path(@article)),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } do %>
+          <i class='fas fa-trash-alt'></i> 
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+<%= link_to (articles_path) do %>
+  <i class="fas fa-undo-alt mt-3"> Go back</i>
+<% end %>

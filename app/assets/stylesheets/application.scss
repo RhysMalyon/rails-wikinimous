@@ -1,0 +1,27 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+nav > ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav > ul > a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+nav > ul > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.card > li {
+  list-style: none;
+}
